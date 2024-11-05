@@ -582,7 +582,7 @@ namespace crystaldock
     {
       y -= isBottom() ? floatingMargin_ : -3;
     }
-    QImage toMirrorImage = mainImage.copy(0, y - itemSpacing_ + 2, width(), itemSpacing_ - 2);
+    QImage toMirrorImage = mainImage.copy(0, y - itemSpacing_ + 1, width(), itemSpacing_ - 2);
     QImage mirrorImage = toMirrorImage.mirrored();
     painter.setOpacity(0.4);
     painter.drawImage(0, y, mirrorImage);
